@@ -12,6 +12,7 @@
 body{
   margin: 0;
   width: 100%;
+  background-color: #151720;
 }
 
 .nav{
@@ -201,15 +202,16 @@ body{
   position: relative;
   z-index: 2;
   width: 100%;
-  background: linear-gradient(0deg, rgb(21, 23, 32)92%, rgba(0,212,255,0) 98%);
-  margin: -10vh 0 0 0;
-  padding: 10vh 20px;
+  background: linear-gradient(0deg, rgb(21, 23, 32)95%, rgba(0,212,255,0) 97%);
+  margin: -21vh 0 0 0;
+  padding: 21vh 0;
 }
 
 .about{
   color: #eee;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .about__title{
@@ -227,6 +229,12 @@ body{
   width: 80%;
   align-self: flex-end;
   margin-top: 30px;
+}
+
+.tour{
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .tour__title{
@@ -257,4 +265,44 @@ body{
 
 .tour__date{
   font-weight: bold;
+}
+
+.sponsor {
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 0 0;
+}
+.sponsor__container{
+  display: flex;
+  width: 200%;
+  animation: bannermove 10s linear infinite;
+}
+.sponsor__container.paused{
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.sponsor__wrapper{
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.sponsor__image{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor__image img {
+  height: 44px;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
