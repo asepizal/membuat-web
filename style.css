@@ -56,6 +56,7 @@ body{
   list-style-type: none;
   padding: 16px 24px;
   text-align: center;
+  font-weight: 600;
 }
 
 .nav__toggle {
@@ -92,7 +93,7 @@ body{
   transition: .25s ease-in-out;
 }
 .nav__toggle.open span {
-  background-color: #000;
+  background-color: #151720;
 }
 
 .nav__toggle span:nth-child(1) {
@@ -176,16 +177,17 @@ body{
 
 .hero__tagline{
   margin: 0;
-  font-size: 3em;
+  font-size: 30px;
 }
 
 .hero__tagline span{
   display: block;
-  margin: -16px 0 0 0;
+  /* margin: -16px 0 0 0; */
 }
 
 .hero__address{
   text-transform: uppercase;
+  padding: 0 20px 0 0;
 }
 
 .hero__address-logo{
@@ -258,9 +260,15 @@ body{
   font-weight: 200;
 }
 
+.tour__schedule tr{
+  height: 60px;
+}
+
 .tour__schedule td{
   vertical-align: top;
-  height: 30px;
+}
+.tour__schedule td:nth-child(2){
+  padding: 0 0 0 10px;
 }
 
 .tour__date{
@@ -289,10 +297,11 @@ body{
   width: 100%;
 }
 .sponsor__image{
-  width: 400px;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
 }
 .sponsor__image img {
   height: 44px;
@@ -317,11 +326,12 @@ body{
 .profile__title{
   color: var(--primary-color);
   margin: 0;
+  font-size: 14px;
 }
 .profile__name{
   color: #eee;
-  font-size: 46px;
-  line-height: 46px;
+  font-size: 25px;
+  line-height: 25px;
   margin: 0;
 }
 
@@ -385,7 +395,6 @@ body{
   font-family: var(--secondary-font);
   font-weight: 600;
   font-size: 16px;
-  padding: 0 16px;
   width: 30%;
   cursor: pointer;
 }
