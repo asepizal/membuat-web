@@ -210,16 +210,19 @@ body {
 .hero__tagline {
   margin: 0;
   font-size: 30px;
+  animation: fadeInUp 1s ease;
 }
 
 .hero__tagline span {
   display: block;
-
 }
 
 .hero__address {
   text-transform: uppercase;
   padding: 0 20px 0 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .hero__address-logo {
@@ -320,8 +323,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 300%;
-  -webkit-animation: bannermove 5s linear infinite;
-  animation: bannermove 5s linear infinite;
+  -webkit-animation: bannermove 10s linear infinite;
+  animation: bannermove 10s linear infinite;
 }
 
 .sponsor__container.pause {
@@ -801,5 +804,33 @@ body {
   100% {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
